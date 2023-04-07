@@ -1,4 +1,4 @@
-# Videogames Catalogue
+# Videogame Catalogue
 
 ### How to run the app
 
