@@ -1,0 +1,26 @@
+<form id="videogame_form">
+  <label for="input_name">Name</label><input id="input_name" name="name" type="text" placeholder="Name"><br>
+  <label for="input_genre">Genre</label><input id="input_genre" name="genre" type="text" placeholder="Genre"><br>
+  <label for="input_platform">Platform</label><input id="input_platform"  name="platform" type="text" placeholder="Platform"><br>
+  <button type="submit">Submit</button>
+</form>
+<h1>Videogames</h1>
+{{#if haveVideogames}}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Genre</th>
+    <th>Platform</th>
+  </tr>
+  {{#each videogames}}
+  <tr>
+    <td>{{this.name}}</td>
+    <td>{{this.genre}}</td>
+    <td>{{this.platform}}</td>
+  </tr>
+  {{/each}}
+</table>
+{{else}}
+<p>There are no videogames!</p>
+{{/if}}
+<script src="./js/videogames.js"></script>
